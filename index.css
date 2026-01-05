@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+:root{
+    --text:#1A2A4F;
+    --primary:rgb(247, 165, 165);
+    --secondary:#FFDBB6;
+    --background:#FFF2EF;
+    --just-incase:#F9B487;
+    --just-incase1:#427A76;
+    --just-incase2:#174143;
+    --font:3vw;
+    --font1:5vw;
+    --font2:2vw;
+    --font3:1vw;
+    --max-width:70vw ;
+}
+.navbar{
+    background-color:var(--text);
+    height:10vh;
+    font-size:var(--font) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--secondary);
+    font-family:fantasy;
+    
+}
+body{
+  background: linear-gradient(130deg, var(--just-incase),var(--primary),var(--secondary)); 
+  font-family: Saira, sans-serif;
+}
+
+.game{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.container{
+    padding: var(--font1);
+   display: grid;
+   grid-template-columns: repeat(3, 8vw);
+   grid-template-rows: repeat(3, 8vw);
+   border-radius: 12px;
+   background:linear-gradient(130deg,var(--background),var(--secondary));
+   box-shadow: 0 4px 10px var(--text);
+   margin:var(--font);
+
+}
+.box{
+   border: 2px solid var(--just-incase2);
+   font-size:var(--font) ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   margin:4px;
+   border-radius: 8px;
+   background-color: var(--background);
+   
+}
+.box:hover{
+    background-color: var(--secondary);
+     transform: scale(1.05) ;
+}
+.welcoming{
+      padding:var(--font2);
+      
+}
+button{
+    padding: 6px;
+    background-color:var(--background);
+    border-radius:16px;
+}
+button:hover{
+    background-color: aliceblue;
+    transform: scale(1.05);
+}
+button:active{
+    background-color: #e6f7f6;
+}
+i{
+    padding: 4px;
+    color: red;
+}
+
