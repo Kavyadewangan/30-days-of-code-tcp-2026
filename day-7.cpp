@@ -11,10 +11,10 @@ void encrypted(int arr[], int size){
     int num = arr[i]%10;
     int rem = (arr[i]/10)%10;
     int last = arr[i]/100;
-    if (num>rem || num > last){
+    if (num>rem && num > last){
         a = num;
     } 
-    else if(rem>num || rem>last){
+    else if(rem>num && rem>last){
         a = rem;
     }
     else{
