@@ -9,7 +9,7 @@ int binarySearch(vector<int> &nums, int target){
         int mid = left + (right - left)/2;
         if(nums[mid] == target){
             result = mid;
-            right = mid - 1;   // move left to find first
+            right = mid - 1;   
         }
         else if(nums[mid] < target){
             left = mid + 1;
@@ -28,7 +28,7 @@ int lastSearch(vector<int> &nums, int target){
         int mid = left + (right - left)/2;
         if(nums[mid] == target){
             result = mid;
-            left = mid + 1;    // move right to find last
+            left = mid + 1;    
         }
         else if(nums[mid] < target){
             left = mid + 1;
